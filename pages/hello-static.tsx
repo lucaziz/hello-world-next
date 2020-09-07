@@ -6,7 +6,7 @@ export default function HelloFromServer(props) {
     return (
         <div className="container">
             <Head>
-                <title>Create Next App</title>
+                <title>SSG</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
