@@ -1,0 +1,20 @@
+.navigation {
+    display: flex;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation li {
+    color: #ccc;
+    padding: 5px 20px;
+    border-left: 1px solid #ccc;
+}
+
+.navigation li:first-child { border-left: 0; }
+
+.active a {
+    color: black;
+}
+
+.navigation a:hover { text-decoration: underline; }

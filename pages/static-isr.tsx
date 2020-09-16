@@ -1,4 +1,6 @@
+import React from 'react';
 import Head from 'next/head'
+import Navigation from '../src/components/navigation/Navigation';
 
 export default function HelloFromServer(props) {
     const { listOfPersons } = props;
@@ -6,13 +8,13 @@ export default function HelloFromServer(props) {
     return (
         <div className="container">
             <Head>
-                <title>SSG</title>
-                <link rel="icon" href="/favicon.ico" />
+                <title>SSG - ISR</title>
             </Head>
 
             <main className="main">
+                <Navigation />
                 <h1 className="title">
-                    Hello static!
+                    Quem está online agora:
                 </h1>
                 <ul className="list">
                     {listOfPersons.map(person => (
@@ -33,5 +35,6 @@ export async function getStaticProps() {
 
     return {
         props: { listOfPersons },
+        revalidate: 10,
     }
 }
