@@ -13,7 +13,7 @@ export default function HelloFromServer(props) {
             <main className="main">
                 <Navigation />
                 <h1 className="title">
-                    Quem está online agora:
+                    Who is online now:
                 </h1>
                 <ul className="list">
                     {listOfPersons.map(person => (
@@ -29,7 +29,7 @@ export default function HelloFromServer(props) {
 }
 
 export async function getStaticProps() {
-    const data = await fetch('https://5f56996832f56200168bd7d1.mockapi.io/api/names');
+    const data = await fetch('https://633f1cfd83f50e9ba3bffdee.mockapi.io/api/v1/users');
     const listOfPersons = await data.json();
 
     return {

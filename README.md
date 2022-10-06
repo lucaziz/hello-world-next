@@ -1,4 +1,4 @@
-####Small project that shows the different ways of generating Next.js. pages.
+### Small project that shows the different ways of generating Next.js. pages.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 - Built using https://mockapi.io/ to fetch data.

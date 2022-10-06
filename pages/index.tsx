@@ -9,7 +9,7 @@ export default function Home() {
 
           <main className="main">
               <h1 className="title">
-                  Olá React Salvador!
+                  Olá equipe Ditto!
               </h1>
           </main>
       </div>
